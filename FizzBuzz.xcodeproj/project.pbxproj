@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		837E89B01CDB4D9F0066A27C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E89AF1CDB4D9F0066A27C /* AppDelegate.swift */; };
-		837E89B21CDB4D9F0066A27C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E89B11CDB4D9F0066A27C /* ViewController.swift */; };
 		837E89B51CDB4D9F0066A27C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837E89B31CDB4D9F0066A27C /* Main.storyboard */; };
 		837E89B71CDB4D9F0066A27C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837E89B61CDB4D9F0066A27C /* Assets.xcassets */; };
 		837E89BA1CDB4D9F0066A27C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837E89B81CDB4D9F0066A27C /* LaunchScreen.storyboard */; };
 		837E89C51CDB4D9F0066A27C /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E89C41CDB4D9F0066A27C /* FizzBuzzTests.swift */; };
 		837E89D01CDB4D9F0066A27C /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E89CF1CDB4D9F0066A27C /* FizzBuzzUITests.swift */; };
+		837E89DE1CDB4DE70066A27C /* FizzBuzzTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E89DD1CDB4DE70066A27C /* FizzBuzzTableViewController.swift */; };
+		837E89E01CDB4E790066A27C /* FizzBuzzDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E89DF1CDB4E790066A27C /* FizzBuzzDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		837E89AC1CDB4D9F0066A27C /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837E89AF1CDB4D9F0066A27C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		837E89B11CDB4D9F0066A27C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		837E89B41CDB4D9F0066A27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		837E89B61CDB4D9F0066A27C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837E89B91CDB4D9F0066A27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		837E89CB1CDB4D9F0066A27C /* FizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		837E89CF1CDB4D9F0066A27C /* FizzBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUITests.swift; sourceTree = "<group>"; };
 		837E89D11CDB4D9F0066A27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837E89DD1CDB4DE70066A27C /* FizzBuzzTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzTableViewController.swift; sourceTree = "<group>"; };
+		837E89DF1CDB4E790066A27C /* FizzBuzzDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzzDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				837E89AF1CDB4D9F0066A27C /* AppDelegate.swift */,
-				837E89B11CDB4D9F0066A27C /* ViewController.swift */,
+				837E89DD1CDB4DE70066A27C /* FizzBuzzTableViewController.swift */,
+				837E89DF1CDB4E790066A27C /* FizzBuzzDataSource.swift */,
 				837E89B31CDB4D9F0066A27C /* Main.storyboard */,
 				837E89B61CDB4D9F0066A27C /* Assets.xcassets */,
 				837E89B81CDB4D9F0066A27C /* LaunchScreen.storyboard */,
@@ -256,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				837E89B21CDB4D9F0066A27C /* ViewController.swift in Sources */,
+				837E89E01CDB4E790066A27C /* FizzBuzzDataSource.swift in Sources */,
 				837E89B01CDB4D9F0066A27C /* AppDelegate.swift in Sources */,
+				837E89DE1CDB4DE70066A27C /* FizzBuzzTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
